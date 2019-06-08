@@ -49,6 +49,7 @@ header img{
 .show h2{
   font-size: 2rem;
   background-color: pink;
+  color: white;
 }
 .show .row{
   position: relative;
@@ -68,4 +69,11 @@ header img{
 }
 .show .card{
   position: static;
+}
+.show .fa-arrow-down{
+  font-size: 2rem;
+}
+
+.show .qr{
+  font-size: 1.5rem;
 }

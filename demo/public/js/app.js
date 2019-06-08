@@ -61446,20 +61446,11 @@ module.exports = function(module) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes React and other helpers. It's a great starting point while
- * building robust, powerful web applications using React + Laravel.
- */
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
-/**
- * Next, we will create a fresh React component instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
 
 __webpack_require__(/*! ./components/Example */ "./resources/js/components/Example.js");
+
+ReactDOM.render(React.createElement(Example, null), document.getElementById('example'));
 
 /***/ }),
 
@@ -61591,10 +61582,6 @@ function (_Component) {
 
 
 
-if (document.getElementById('example')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render(react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Example, null), document.getElementById('example'));
-}
-
 /***/ }),
 
 /***/ "./resources/sass/app.scss":
@@ -61615,8 +61602,8 @@ if (document.getElementById('example')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/yuyaplan/Desktop/hackson/Hackathon_demo/demo/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/yuyaplan/Desktop/hackson/Hackathon_demo/demo/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/tomoya/Library/Mobile Documents/com~apple~CloudDocs/Hackathon_demo/demo/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/tomoya/Library/Mobile Documents/com~apple~CloudDocs/Hackathon_demo/demo/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

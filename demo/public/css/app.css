@@ -10646,3 +10646,15 @@ a.text-dark:focus {
   }
 }
 
+header img {
+  height: 3rem;
+}
+
+.card-title {
+  font-size: 2rem;
+}
+
+.card img {
+  border-radius: 50%;
+}
+

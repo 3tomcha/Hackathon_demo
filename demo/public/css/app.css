@@ -10658,6 +10658,20 @@ header img {
   border-radius: 50%;
 }
 
+.submit-btn {
+  border: 0px;
+  height: 110px;
+  width: 110px;
+  cursor: pointer;
+  background: url(/images/touroku.png?13e38c420df5923abb7a59b7cc162191) left top no-repeat;
+}
+
+.card-header {
+  background-color: transparent;
+  border-bottom: transparent;
+  font-size: 24px;
+}
+
 .show li {
   list-style-type: none;
 }

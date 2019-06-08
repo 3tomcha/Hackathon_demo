@@ -17,7 +17,7 @@ function Cupple(props) {
                     <Card className="text-center">
                         <Image variant="top" src={props.user2_image} thumbnail/>
                         <Card.Footer>
-                            <small className="text-muted">{props.memorial_time}</small>
+                            <small className="text-muted">{props.user2_name}</small>
                         </Card.Footer>
                     </Card>
                         </Card.Body>

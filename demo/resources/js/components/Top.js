@@ -24,7 +24,6 @@ class Top extends Component {
         let List = [];
         const result = await LOVEContract.methods.getListHistory().call();
         await Promise.all(result.map(number => {
-            console.log(number);
             List.unshift(number);
             this.setState({cupplelist: List});
             this.setState({MemorialDay: new Date(parseInt(number.timestamp._hex)*1000)});

@@ -17,7 +17,7 @@ class CuppleList extends Component {
         } if (d < 10) {
             d = '0' + d;
         }
-        return y + '年' + m + '月' + d + '日（' + wNames[w] + ')';
+        return '交際記念日：' + y + '年' + m + '月' + d + '日' + '🎉';
     }
 
     render() {

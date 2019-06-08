@@ -19,4 +19,8 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/match', function () {
+    return view('show');
+});
 // Route::resource('photos', 'PhotoController');

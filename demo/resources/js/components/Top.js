@@ -7,7 +7,7 @@ import web3 from './web3';
 import LOVEContract from './ABI';
 
 // コンポーネントの読み込み
-import Uploader from './Example';
+import Uploader from './Uploader';
 import CuppleList from './CuppleList';
 
 class Top extends Component {

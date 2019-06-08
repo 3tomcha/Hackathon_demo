@@ -25556,7 +25556,7 @@ module.exports = g;
 /*!*****************************************!*\
   !*** ./resources/js/components/Show.js ***!
   \*****************************************/
-/*! exports provided: default */
+/*! no exports provided */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -25602,10 +25602,12 @@ function (_Component) {
   _inherits(Show, _Component);
 
   function Show(props) {
+    var _this;
+
     _classCallCheck(this, Show);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Show).call(this, props)); // console.log("show");
-    // console.log("show");
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Show).call(this, props));
+    console.log("show"); // console.log("show");
     // this.state = {
     //   TokenURI_image: '',
     //   TokenURI_name: '',
@@ -25614,9 +25616,16 @@ function (_Component) {
     //   showFlag: true,
     //   showModal: false,
     // }
+
+    return _this;
   }
 
   _createClass(Show, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null, "aa");
+    }
+  }, {
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = _asyncToGenerator(
@@ -25626,6 +25635,25 @@ function (_Component) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
+                //render後にコントラクトのstateをgetしてくる
+                if (true) {
+                  console.log("true");
+                } // if (window.ethereum) {
+                //   try {
+                //     // Request account access
+                //     await window.ethereum.enable();
+                //   } catch (error) {
+                //     // User denied account access...
+                //     console.error("User denied account access")
+                //   }
+                // }
+                // const manager = await lottery.methods.manager().call();  //managar取得
+                // const players = await lottery.methods.getPlayers().call();  //参加者取得
+                // const balance = await web3.eth.getBalance(lottery.options.address);  //コントラクトの残高。
+                // this.setState({ manager, players, balance }); //classのsatateをブロックチェーン上のものと同期させる
+
+
+              case 1:
               case "end":
                 return _context.stop();
             }
@@ -25643,8 +25671,6 @@ function (_Component) {
 
   return Show;
 }(react__WEBPACK_IMPORTED_MODULE_1__["Component"]);
-
-/* harmony default export */ __webpack_exports__["default"] = (Show);
 
 if (document.getElementById('show')) {
   react_dom__WEBPACK_IMPORTED_MODULE_2___default.a.render(react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(Show, null), document.getElementById('show'));

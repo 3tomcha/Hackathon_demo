@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 class Show extends Component{
   constructor(props) {
     super(props);
-    // console.log("show");
+    console.log("show");
     // console.log("show");
     // this.state = {
     //   TokenURI_image: '',
@@ -17,8 +17,17 @@ class Show extends Component{
     //   showModal: false,
     // }
   }
+  render(){
+    return (
+      <div>aa
+      </div>
+    );
+  }
 
   async componentDidMount() { //render後にコントラクトのstateをgetしてくる
+    if (true) {
+      console.log("true");
+    }
     // if (window.ethereum) {
     //   try {
     //     // Request account access
@@ -36,7 +45,6 @@ class Show extends Component{
 }
 
 
-export default Show;
 
 if (document.getElementById('show')) {
   ReactDOM.render(<Show />, document.getElementById('show'));

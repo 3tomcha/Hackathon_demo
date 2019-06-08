@@ -25,5 +25,7 @@
       <img src="img/qr.jpg" class="w-100">
     </div>
   </body>
+  <div id="show"></div>
+  <script src="/js/Show.js" desc></script>
   </html>
   @endsection

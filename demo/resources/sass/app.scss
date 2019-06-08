@@ -10,9 +10,62 @@
 header img{
   height:3rem;
 }
-.card-title{
+.show .card-title{
   font-size: 2rem;
 }
-.card img {
+.show .card img {
   border-radius: 50%;
+}
+.show li{
+  list-style-type: none;
+}
+.show .card{
+  border: none;
+}
+.show ul{
+  padding: 0;
+}
+.show .heart .fa-heart{
+  font-size:12rem;
+}
+.show .fa-heart{
+  color: #ea9ade;
+}
+.show .heart{
+  position: relative;
+}
+.show .heart p{
+  position: absolute;
+  font-size: 1.3rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: auto;
+  height: 3rem;
+  color: white;
+}
+.show h2{
+  font-size: 2rem;
+  background-color: pink;
+}
+.show .row{
+  position: relative;
+}
+
+.show .fa-heart{
+    position: absolute;
+    font-size: 5.3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: auto;
+    height: 3rem;
+    color: red;
+}
+.show .card{
+  position: static;
 }

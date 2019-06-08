@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { CardColumns } from 'react-bootstrap';
 import Cupple from './Cupple';
+import ReactDOM from 'react-dom';
 
 class CuppleList extends Component {
 
@@ -23,8 +24,8 @@ class CuppleList extends Component {
     render() {
         const list = this.props.cupplelist.map((cupple, i) => {
             return (
-                <Cupple 
-                    key={i} 
+                <Cupple
+                    key={i}
                     user1_address={cupple.user1.addr}
                     user1_name={cupple.user1.name}
                     user1_image={cupple.user1.image}
@@ -48,3 +49,7 @@ class CuppleList extends Component {
 }
 
 export default CuppleList;
+
+if (document.getElementById('cupplelist')) {
+  ReactDOM.render(<CuppleList />, document.getElementById('cupplelist'));
+}

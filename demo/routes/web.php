@@ -23,4 +23,12 @@ Route::get('/', function () {
 Route::get('/match', function () {
     return view('show');
 });
+
+Route::get('/uploader', function () {
+    return view('uploader');
+});
+
+Route::get('/cupplelist', function () {
+    return view('cupplelist');
+});
 // Route::resource('photos', 'PhotoController');

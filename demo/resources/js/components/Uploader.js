@@ -54,11 +54,11 @@ class Uploader extends Component {
     } else {
 
       this.OpenModal();
-      
+
       // 画像をIPFSにuploadする
       const results = await this.convertToBuffer(TokenURI_image);
       const image = "https://ipfs.io/ipfs/"+results[0].hash;
-      
+
       this.setState({ipfsHash_image: image});
       this.setState({showFlag: false});
       console.log(this.state.ipfsHash_image);
@@ -109,7 +109,7 @@ class Uploader extends Component {
                 </InputGroup>
               </Card.Body>
             </Card>
-            
+
             <Button className="btn-block mb-3" variant="primary" type="submit">
               Ulopad
             </Button>
@@ -128,5 +128,9 @@ class Uploader extends Component {
       );
     }
   }
-  
+
 export default Uploader;
+
+if (document.getElementById('uploader')) {
+  ReactDOM.render(<Uploader />, document.getElementById('uploader'));
+}

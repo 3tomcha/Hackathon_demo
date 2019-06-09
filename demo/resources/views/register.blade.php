@@ -2,7 +2,7 @@
 @section('content')
 
 <body class="bg-white show">
-<?php print($syg)?>
+<?php print($sig)?>
 </body>
 <!-- <div id="uploader"></div> -->
 <script src="{{asset('js/app.js')}}" ></script>

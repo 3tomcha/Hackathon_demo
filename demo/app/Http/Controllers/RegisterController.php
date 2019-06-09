@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class RegisterController extends Controller
 {
-    public function index($syg){
-      return \view('register',['syg' => $syg]);
+    public function index($sig){
+      return \view('register',['sig' => $sig]);
     }
 
         // public function index(){

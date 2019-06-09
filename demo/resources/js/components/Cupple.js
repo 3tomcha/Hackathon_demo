@@ -9,15 +9,15 @@ function Cupple(props) {
                     <Card className="text-center">
                         <Card.Body>
                     <Card className="text-center">
-                        <Image variant="top" src={props.user1_image} thumbnail/>
+                        <Image variant="top" src={props.user1_image ? props.user1_image : '/img/test.jpg'} thumbnail/>
                         <Card.Footer>
-                            <small className="text-muted">{props.user1_name}</small>
+                            <small className="text-muted">{props.user1_name ? props.user1_name : '上村莉奈'}</small>
                         </Card.Footer>
                     </Card>
                     <Card className="text-center">
-                        <Image variant="top" src={props.user2_image} thumbnail/>
+                        <Image variant="top" src={props.user2_image ? props.user2_image : '/img/test.jpg'} thumbnail/>
                         <Card.Footer>
-                            <small className="text-muted">{props.user2_name}</small>
+                            <small className="text-muted">{props.user2_name ? props.user2_name : '上村莉奈'}</small>
                         </Card.Footer>
                     </Card>
                         </Card.Body>

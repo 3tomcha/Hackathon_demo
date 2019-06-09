@@ -19,7 +19,7 @@
 <body class="bg-white show">
   <div id="example"></div>
   <script src="{{asset('js/app.js')}}" ></script>
-  <script src="/js/Top.js" ></script>
+  <!-- <script src="/js/Top.js" ></script> -->
   </body>
 
   </html>

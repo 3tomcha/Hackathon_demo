@@ -81,7 +81,7 @@ class Show2 extends Component{
   }
   render(){
     return (
-          <div id="show2" class="mb-5">二人が初めてつきあった日は<br>{this.state.MemorialDay[0]? this.state.MemorialDay[0]: 30}日</div>
+          <div id="show2" class="mb-5">二人が初めてつきあった日は{this.state.MemorialDay[0]? this.state.MemorialDay[0]: 30}日</div>
     );
   }
 }

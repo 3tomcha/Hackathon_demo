@@ -41823,19 +41823,19 @@ function Cupple(props) {
     className: "text-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Image"], {
     variant: "top",
-    src: props.user1_image,
+    src: props.user1_image ? props.user1_image : '/img/test.jpg',
     thumbnail: true
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Footer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-muted"
-  }, props.user1_name))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+  }, props.user1_name ? props.user1_name : '上村莉奈'))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     className: "text-center"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Image"], {
     variant: "top",
-    src: props.user2_image,
+    src: props.user2_image ? props.user2_image : '/img/test.jpg',
     thumbnail: true
   }), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Footer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
     className: "text-muted"
-  }, props.user2_name)))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Footer, null, props.memorial_time)))));
+  }, props.user2_name ? props.user2_name : '上村莉奈')))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["Card"].Footer, null, props.memorial_time)))));
 }
 
 /* harmony default export */ __webpack_exports__["default"] = (Cupple);
@@ -41926,7 +41926,8 @@ function (_Component) {
           user2_name: cupple.user2.name,
           user2_image: cupple.user2.iamge,
           memorial_time: _this.dateFormat(cupple.timestamp._hex),
-          internalLink: true
+          internalLink: true,
+          linkUrl: "/match"
         });
       });
       return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_bootstrap__WEBPACK_IMPORTED_MODULE_1__["CardColumns"], null, list));
@@ -41951,7 +41952,7 @@ if (document.getElementById('cupplelist')) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /Users/yuyaplan/Desktop/hackson/Hackathon_demo/demo/resources/js/components/Cupplelist.js */"./resources/js/components/Cupplelist.js");
+module.exports = __webpack_require__(/*! /Users/tomoya/Library/Mobile Documents/com~apple~CloudDocs/Hackathon_demo/demo/resources/js/components/Cupplelist.js */"./resources/js/components/Cupplelist.js");
 
 
 /***/ })

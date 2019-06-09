@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, Card, InputGroup, Form, Button, Modal } from 'react-bootstrap';
+import { Image, Container, Card, InputGroup, Form, Button, Modal } from 'react-bootstrap';
 import ipfs from './IPFS';
 import ReactDOM from 'react-dom';
 
@@ -14,6 +14,7 @@ class Uploader extends Component {
             TokenURI_image: '',
             TokenURI_name: '',
             ipfsHash_image: '',
+            previewImage: '',
             showFlag: true,
             showModal: false,
         }
@@ -28,6 +29,10 @@ class Uploader extends Component {
     let reader = new FileReader();
     reader.readAsArrayBuffer(file);
     reader.onloadend = () => this.setState({TokenURI_image: reader.result});
+
+    let reader2 = new FileReader();
+    reader2.readAsDataURL(file);
+    reader2.onloadend = () => this.setState({previewImage: reader2.result});
   };
 
   // Bufferオブジェクトに変換し、IPFSに送信
@@ -88,31 +93,29 @@ class Uploader extends Component {
           <Form onSubmit={this.onSendIPFS.bind(this)}>
 
           <Card className="mb-3">
-              <Card.Header className="text-white bg-success">名前</Card.Header>
+              <Card.Header className="text-center text-header card-header">名前と画像の登録</Card.Header>
               <Card.Body>
                 <Card.Text>
-                  名前を入力して下さい
+                  名前
                 </Card.Text>
-                <Form.Control type="text" placeholder="Enter Token Name" value={this.state.TokenURI_name} onChange={this.onChangeName.bind(this)}/>
-               </Card.Body>
-             </Card>
-
-            <Card className="mb-3">
-              <Card.Header className="text-white bg-success">画像</Card.Header>
-              <Card.Body>
-                 <Card.Text>
-                  画像を選択して下さい
+                <Card.Text>
+                  <Form.Control type="text" placeholder="あなたの名前を入力してね" value={this.state.TokenURI_name} onChange={this.onChangeName.bind(this)}/>
+                </Card.Text>
+                <Card.Text>
+                  画像
                 </Card.Text>
                 <InputGroup className="mb-3">
                   <input type="file" className="custom-file-input" id="FileUploader" onChange={this.captureFile.bind(this)} />
                   <label className="custom-file-label" htmlFor="FileUploader">Choose file</label>
                 </InputGroup>
+                <Card.Text>
+                  <Image src={this.state.previewImage} />
+                </Card.Text>
+                <Card.Text className="text-center">
+                  <Button className="mb-3 submit-btn" variant="primary" type="submit"></Button>
+                </Card.Text>
               </Card.Body>
             </Card>
-
-            <Button className="btn-block mb-3" variant="primary" type="submit">
-              Ulopad
-            </Button>
           </Form>
 
           </Container>

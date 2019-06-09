@@ -31,4 +31,6 @@ Route::get('/uploader', function () {
 Route::get('/cupplelist', function () {
     return view('cupplelist');
 });
+
+Route::get('/register/{syg}', 'RegisterController@index');
 // Route::resource('photos', 'PhotoController');

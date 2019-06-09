@@ -17,10 +17,9 @@
 @extends('layouts/app')
 @section('content')
 <body class="bg-white show">
-  <a href="/uploader"><i class="fas fa-pen"></i></a>
   <div id="example"></div>
   <script src="{{asset('js/app.js')}}" ></script>
-  <script src="/js/Top.js" ></script>
+  <!-- <script src="/js/Top.js" ></script> -->
   </body>
 
   </html>

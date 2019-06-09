@@ -11,7 +11,8 @@
 <body>
   <header class="bg-white">
     <div class="navbar navbar-light container mx-auto">
-      <a href="/"><img src="/img/logo.png"></a>
+      <a href="/" style="width:80%;"><img src="/img/logo.png"></a>
+      <a href="/uploader" style="width:20%;font-size:2rem;color:pink;" class="text-right"><i class="fas fa-pen"></i></a>
     </div>
   </header>
 

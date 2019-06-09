@@ -6,6 +6,6 @@
 </body>
 <div id="uploader"></div>
 <script src="{{asset('js/app.js')}}" ></script>
-<script src="/js/Uploader.js" desc></script>
+<!-- <script src="/js/Uploader.js" desc></script> -->
 </html>
 @endsection

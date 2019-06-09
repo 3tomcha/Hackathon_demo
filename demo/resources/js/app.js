@@ -13,3 +13,4 @@ require('./bootstrap');
  */
 
 require('./components/Top');
+require('./components/Uploader');

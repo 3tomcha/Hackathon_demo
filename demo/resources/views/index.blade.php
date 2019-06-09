@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -12,4 +12,15 @@
         <div id="example"></div>
         <script src="{{asset('js/app.js')}}" ></script>
     </body>
-</html>
+</html> -->
+
+@extends('layouts/app')
+@section('content')
+<body class="bg-white show">
+  <div id="example"></div>
+  <script src="{{asset('js/app.js')}}" ></script>
+  <script src="/js/Top.js" ></script>
+  </body>
+
+  </html>
+  @endsection

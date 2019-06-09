@@ -18,8 +18,11 @@ class SetHistory extends Component {
     async _SetHistory() {
         const accounts = await web3.eth.getAccounts();
         this.setState({useraddress: accounts[0]});
-        const address = web3.utils.keccak256(account[0])
-        await LOVEContract.methods.setHisitory(address, this.state.receiveSig).send({
+        const address = web3.utils.keccak256(accounts[0]);
+        var search = location.search;
+        alert(search);
+        console.log(address);
+        await LOVEContract.methods.setHistory(address, search).send({
             from: accounts[0]
         });
     }
@@ -37,11 +40,3 @@ class SetHistory extends Component {
 }
 
 export default SetHistory;
-
-
-
-// if (document.getElementById('receiveSig')) {
-//     const sig = document.getElementById('receiveSig');
-//     const props = Object.assign({}, component.dataset);
-//     ReactDOM.render(<ReactComponent {...props} />, component);
-// }

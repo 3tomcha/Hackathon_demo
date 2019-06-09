@@ -34,6 +34,7 @@ class CuppleList extends Component {
                     user2_image={cupple.user2.iamge}
                     memorial_time={this.dateFormat(cupple.timestamp._hex)}
                     internalLink={true}
+                    linkUrl={"/match"}
                 />
             );
         });

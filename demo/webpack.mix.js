@@ -11,5 +11,9 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+mix.react('resources/js/app.js', 'public/js')
+  .react('resources/js/components/Show.js', 'public/js')
+  .react('resources/js/components/Cupplelist.js', 'public/js')
+  .react('resources/js/components/Uploader.js', 'public/js')
+  .react('resources/js/components/Top.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css');

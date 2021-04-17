@@ -1,13 +1,13 @@
 # Inspiration
 チームメンバーが過去読んだブロックチェーンを利用した浮気防止の論文
 # What it does
-交際ステータスの記録アプリケーション（交際関係の信用スコア蓄積及び閲覧）. 
-付き合っている彼/彼女とブロックチェーンを用いて交際証明を行う
+交際ステータスの記録アプリケーション（交際関係の信用スコア蓄積及び閲覧）<br>   
+付き合っている彼/彼女とブロックチェーンを用いて交際証明を行う. 
 # How I built it
-Laravel
-React
-solidty
-IPFS
+Laravel<br>
+React<br>
+solidty<br>
+IPFS<br>
 # Challenges I ran into
 1つのトランザクションに複数署名
 # Accomplishments that I'm proud of

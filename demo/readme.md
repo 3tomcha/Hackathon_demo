@@ -11,10 +11,10 @@ IPFS<br>
 # Challenges I ran into
 1つのトランザクションに複数署名
 # Accomplishments that I'm proud of
-1つのトランザクションに複数(今回は2者間)の署名をいれることによって複数人の合意がとれていることを保証した. 
-What's next for DecryptTokyo-Group-6-AiPlus. 
-独り身に対するマッチング機能(Tinder式)の追加. 
-愛コインを追加して記念日等にいいねを送りあう機能の追加. 
+1つのトランザクションに複数(今回は2者間)の署名をいれることによって複数人の合意がとれていることを保証した. <br>
+What's next for DecryptTokyo-Group-6-AiPlus. <br>
+独り身に対するマッチング機能(Tinder式)の追加. <br>
+愛コインを追加して記念日等にいいねを送りあう機能の追加.<br> 
 # Built With
 laravel-react-solidity
 
